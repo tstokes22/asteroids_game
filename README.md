@@ -1,4 +1,4 @@
-# Asteroids Arcade Clone
+# Asteroids Arcade Game
 ### Object-Oriented Game Development Project
 
 <img width="1280" height="718" alt="image" src="https://github.com/user-attachments/assets/47832853-d8a7-4f53-88be-959428dba100" />
@@ -9,7 +9,7 @@ The Asteroids Arcade Clone is a modern reimagining of the classic 1979 arcade ga
 
 # Key Features
 
-    Vector-Based Physics: Implements 2D vector mathematics for smooth, momentum-based player movement and projectile trajectories.
+Vector-Based Physics: Implements 2D vector mathematics for smooth, momentum-based player movement and projectile trajectories.
 
 Dynamic Asteroid Splitting: Features a recursive-style spawning system where large asteroids break into smaller, faster fragments upon impact.
 
@@ -21,7 +21,7 @@ Encapsulated Game Objects: Every game element (Player, Asteroid, Shot) is a disc
 
 The game engine is built on a robust architectural foundation:
 
-    Game Loop Management: A centralized main.py handles the clock speed (FPS), delta-time calculations for frame-rate independence, and the rendering pipeline.
+Game Loop Management: A centralized main.py handles the clock speed (FPS), delta-time calculations for frame-rate independence, and the rendering pipeline.
 
 Inheritance & Polymorphism: A core CircleShape class provides the foundation for position, velocity, and collision logic, which is then extended by specialized classes.
 
@@ -31,7 +31,7 @@ Input Handling: Implements responsive keyboard mapping for rotation, acceleratio
 
 # Technical Deep Dive
 
-    Collision Logic: Implements a distance-based collision algorithm (distance <= radius1 + radius2) to provide precise interaction detection without the overhead of per-pixel masks.
+Collision Logic: Implements a distance-based collision algorithm (distance <= radius1 + radius2) to provide precise interaction detection without the overhead of per-pixel masks.
 
 Delta Time (dt): All movement and rotations are multiplied by a dt variable, ensuring the game runs at the same speed regardless of the hardware's processing power.
 
@@ -41,15 +41,15 @@ Constants Management: Centralizes all game parameters (screen dimensions, player
 
   Clone the Repository:
     
-    Bash
+    
     git clone https://github.com/tstokes22/asteroids_game.git
 
 Install Dependencies:
   
-    Bash
+    
     pip install -r requirements.txt
 
 Run the Game:
 
-    Bash
+    
     python main.py
